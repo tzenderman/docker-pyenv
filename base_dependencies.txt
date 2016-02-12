@@ -1,0 +1,9 @@
+build-essential
+git-core
+libbz2-dev
+libreadline-dev
+libsqlite3-dev
+libssl-dev
+llvm
+make
+zlib1g-dev
