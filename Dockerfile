@@ -1,4 +1,3 @@
-# Dockerfile used to build base image for projects using Python, Node, and Ruby.
 FROM phusion/baseimage:0.9.17
 MAINTAINER Tim Zenderman <tim@bananadesk.com>
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh && \
@@ -7,7 +6,6 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh && \
 WORKDIR /code
 
 ENV PYENV_ROOT /root/.pyenv
-ENV NVM_DIR /usr/local/nvm
 ENV PATH $PYENV_ROOT/shims:$PYENV_ROOT/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$PATH
 
 
